@@ -37,8 +37,6 @@ li{
     
 }
 img{
-    /*max-width: 100%;*/
-    /*height:auto;*/
     width: 25%;
 }
 
@@ -53,7 +51,7 @@ header{
     background-size: cover;
     display: block;
     margin-top: 12px;
-    border-top:11px solid hsl(20, 93%, 76%, 0.93);
+    border-top:11px solid hsla(20, 93%, 76%, 0.93);
     color:hsla(0, 2%, 81%, 1);
 }
 header > h1{
@@ -104,36 +102,21 @@ nav > a:hover{
 /*************************************************
             MAIN CONTENT
 *************************************************/
-/*main{
+
+main{
     display:grid;
     padding:1rem 2rem;
     font-size: 1.0em;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 1px;
-    border-bottom:10px solid hsl(20, 93%, 76%, 0.93);
+    border-bottom:10px solid hsla(20, 93%, 76%, 0.93);
 }
 .first{
     grid-column: 1/span 2;
 }
 section {
     padding: 10px; 
-}
-    */
-main{
-    padding:1rem 2rem;
-    /*margin: 0 2rem;*/
-    font-size: 1.0em;
-    display:flex;
-    border-bottom:10px solid hsl(20, 93%, 76%, 0.93);
-}
-
-/*
-.first{
-    grid-column: 1/span 2;
-}*/
-section {
-    padding: 10px;
 }
 
 section p{
@@ -143,25 +126,15 @@ section p{
 }
 section p img{
     float:left;
-    width:50%;
+    width:30%;
     margin-right: 2rem;
    /* margin-bottom: 1rem;*/
     
 }
-/*.first-segment{ /*
-    width: 50%;
-    border-right: 1px solid #d4d4d4;
-    margin-top: 1.5rem;
-    flex-direction: column;
-    padding: 1rem 2rem;
-   
-    /*float:left;
-    margin-right: 2rem;
-} */
+
 
 section > h1{
-    /*font-size:1.999em;*/
-    color:hsl(20, 93%, 76%, 0.93);
+    color:hsla(20, 93%, 76%, 0.93);
 }
     
 
@@ -202,7 +175,7 @@ footer{
     
 }
 .foot dt{
-    color:hsl(20, 93%, 76%, 0.93);
+    color:hsla(20, 93%, 76%, 0.93);
     font-size:1.414em;
     
 }
@@ -224,6 +197,7 @@ footer{
 /*************************************************
             MEDIA QUERIES for layout
 *************************************************/
+
 @media (max-width: 599px){
     /*small*/
 .container{
@@ -263,12 +237,12 @@ footer{
         
     }
     main img{
-        max-width: 100%;
+        width: 50%;
         height:auto;
         margin:0 0 10px 0;
     }
     footer{ 
-        display: :flex;
+        display:flex;
         flex-direction: column;
         justify-content:space-between;
         align-items: flex-start;
@@ -289,11 +263,11 @@ footer{
 nav > a,
 nav > a:visited,
 nav > a:link{
-    color: #333;
+    color:hsla(247, 0%, 19%, 1);
     font-weight: 900;
     text-decoration: none;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid hsla(247, 0%, 19%, 1);
     
     
 }
@@ -306,40 +280,30 @@ nav > a:hover{
     
 @media (min-width: 600px) and (max-width:999px){
     /*medium*/
-/*    header{ 
-    border-top: 10px solid
-    }*/
-/*main{
+
+main{
     display:grid;
     padding:1rem 2rem;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 1px;
-    border-bottom:10px solid hsl(20, 93%, 76%, 0.93);
+    border-bottom:10px solid hsla(20, 93%, 76%, 0.93);
     font-size: 1.0em;
 }
 .first{
     grid-column: 1/span 2;
-}*/
-#primary {
-        display:grid;
-        padding:1rem 2rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-row-gap:1px;
-        border-bottom: 10px solid hsl(20,93%,76%,0.93);
-        font-size:1.0rm;
-    }
+}
 section {
     padding: 10px; 
 }
       
- .minor-segemnt img{
+/* .minor-segemnt img{
         float:none;
         max-width: 100%;
         width:100%;
-    }
-    footer{
+    }*/
+
+footer{
         display:flex;
         flex-direction: column;
         justify-content: space-between;
@@ -347,11 +311,7 @@ section {
     }
 @media (min-width: 1000px){
     /*large*/
-  /*      html{
-        font-size: 120%;;
-    
-    
-}*/
+
 main{
     display:grid;
     padding:1rem 2rem;
@@ -359,7 +319,7 @@ main{
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 1px;
-    border-bottom:10px solid hsl(20, 93%, 76%, 0.93);
+    border-bottom:10px solid hsla(20, 93%, 76%, 0.93);
 }
 .first{
     grid-column: 1/span 2;
@@ -377,5 +337,4 @@ section {
 section p{
     font-size: 1.0em;
     text-align: justify;
-    
-}
+    }
